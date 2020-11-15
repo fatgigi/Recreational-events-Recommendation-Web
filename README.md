@@ -1,9 +1,9 @@
 # Recreational-events-Recommendation-Web
 
-Flix is an app that allows users to browse movies from the [The Movie Database API](http://docs.themoviedb.apiary.io/#).
+This project is an web recommendation enginee that allows users to browse near by recreational activities.  
+The data comes from the [TicketMaster API](https://developer.ticketmaster.com/).
 
-📝 `NOTE - PASTE PART 2 SNIPPET HERE:` Paste the README template for part 2 of this assignment here at the top. This will show a history of your development process, which users stories you completed and how your app looked and functioned at each step.
-
+📝 
 ---
 
 ## Flix Part 1
