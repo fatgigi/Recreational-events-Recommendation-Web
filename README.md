@@ -10,7 +10,7 @@ The data comes from the [TicketMaster API](https://developer.ticketmaster.com/)
 
 
 ### App Walkthrough GIF
-<img src="http://g.recordit.co/o8pMni5EJo.gif" width=250><br>
+<img src="http://g.recordit.co/dg0tcdKUxx.gif" width=250><br>
 ---
 
 ## Part 1_Logic Tier
