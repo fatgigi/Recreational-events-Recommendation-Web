@@ -8,57 +8,57 @@ The data comes from the [TicketMaster API](https://developer.ticketmaster.com/).
 <img src="http://g.recordit.co/o8pMni5EJo.gif" width=250><br>
 ---
 
-## Part 1_backend
+## Part 1_Logic Tier
 
-### User Stories
-`TODO://` In the **User Stories section below**, add an `x` in the `-[ ]` like this `- [x]` for any user story you complete. (🚫 Remove this paragraph after checking off completed user stories)
+### Logic Tier
 
-#### REQUIRED (10pts)
-- [] (2pts) User sees an app icon on the home screen and a styled launch screen.
-- [✓] (5pts) User can view and scroll through a list of movies now playing in theaters.
-- [ ] (3pts) User can view the movie poster image for each movie.
+#### TASKS 
+- [✓] User sees an app icon on the home screen and a styled launch screen.
+- [✓] User can view and scroll through a list of movies now playing in theaters.
+- [✓] User can view the movie poster image for each movie.
 
-#### BONUS
-- [ ] (2pt) User can view the app on various device sizes and orientations.
-- [ ] (1pt) Run your app on a real device.
+#### FINISHED
+Five servlets:
+1. Search Item : Fetch data from TicketMaster API  
+2. Recommendation : Using 
+
 
 ### Notes
 Describe any challenges encountered while building the app.
 
 ---
 
-## Part 2_database_MySQL
+## Part 2_Data Tier_A
 
 ### MySql
-`TODO://` In the **User Stories section below**, add an `x` in the `-[ ]` like this `- [x]` for any user story you complete. (🚫 Remove this paragraph after checking off completed user stories)
 
-#### REQUIRED (10pts)
-- [] (2pts) User sees an app icon on the home screen and a styled launch screen.
-- [✓] (5pts) User can view and scroll through a list of movies now playing in theaters.
-- [ ] (3pts) User can view the movie poster image for each movie.
+#### TASKS 
+- [✓] User sees an app icon on the home screen and a styled launch screen.
+- [✓] User can view and scroll through a list of movies now playing in theaters.
+- [✓] User can view the movie poster image for each movie.
 
-#### BONUS
-- [ ] (2pt) User can view the app on various device sizes and orientations.
-- [ ] (1pt) Run your app on a real device.
+#### FINISHED
+The MySQL database has 4 tables.   
+The first table is the item with 7 properties, including the item's id, name, rating, address, image_url, url and distance from the user's geolocations.   
+The second table is the categories, this table has a foreign key linked to the item, as categories is also a property for the item.  
+The third table is the favorited items, the properties including the user_id, item_id and the time to set this item as the favorite. This table includes the items liked by the users, and can be used as the base data to do the content-recommendations.   
+The fourth table is the users, which includes the user_id, the password, the first_name and the last_name.
 
 ### Notes
 Describe any challenges encountered while building the app.
 
 ---
 
-## Part 3_database_MongoDB
+## Part 3_Data Tier_B
 
 ### MongoDB
-`TODO://` In the **User Stories section below**, add an `x` in the `-[ ]` like this `- [x]` for any user story you complete. (🚫 Remove this paragraph after checking off completed user stories)
 
-#### REQUIRED (10pts)
-- [] (2pts) User sees an app icon on the home screen and a styled launch screen.
-- [✓] (5pts) User can view and scroll through a list of movies now playing in theaters.
-- [ ] (3pts) User can view the movie poster image for each movie.
+#### TASKS 
+- [✓] User sees an app icon on the home screen and a styled launch screen.
+- [✓] User can view and scroll through a list of movies now playing in theaters.
+- [✓] User can view the movie poster image for each movie.
 
-#### BONUS
-- [ ] (2pt) User can view the app on various device sizes and orientations.
-- [ ] (1pt) Run your app on a real device.
+#### FINISHED
 
 ### Notes
 Describe any challenges encountered while building the app.
