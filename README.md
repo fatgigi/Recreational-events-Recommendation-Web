@@ -3,7 +3,8 @@
 This project is an web recommendation enginee that allows users to browse near by recreational activities.  
 The data comes from the [TicketMaster API](https://developer.ticketmaster.com/).
 
-📝  ### App Walkthrough GIF
+
+### App Walkthrough GIF
 <img src="http://g.recordit.co/o8pMni5EJo.gif" width=250><br>
 ---
 
