@@ -1,14 +1,12 @@
 # Recreational-events-Recommendation-Web
 
-This project is a personalization based recommendation engine for recreational events.  
+This project is a personalization based recommendation engine for recreational events  
 
-What the project basically does is to use the user's geolocations to search and recommend recreational activities for people to participate.
+What the project basically does is to use the user's geolocations to search and recommend recreational activities for people to participate
 
-The backend includes a Java service which has 5 servlets, including the functionalities of search, recommendation, set and unset favorite events and login and logout.
+The backend includes a Java service which has 5 servlets, including the functionalities of search, recommendation, set and unset favorite events and login and logout
 
-Applied the polymophism and factory pattern to build the DB connection interface, such that either MySQL or MongoDB connection can be built on the fly.
-
-The data comes from the [TicketMaster API](https://developer.ticketmaster.com/).
+The data comes from the [TicketMaster API](https://developer.ticketmaster.com/)
 
 
 ### App Walkthrough GIF
@@ -20,14 +18,19 @@ The data comes from the [TicketMaster API](https://developer.ticketmaster.com/).
 ### Logic Tier
 
 #### TASKS 
-- [ ] User sees an app icon on the home screen and a styled launch screen.
-- [ ] User can view and scroll through a list of movies now playing in theaters.
-- [ ] User can view the movie poster image for each movie.
+- [ ] As soon as the user login, fetch data from the TicketMaster API based on the user's geolocations
+- [ ] User can favorite and unfavorite specific activities
+- [ ] Learn user preferences, recommend items that are "similar" to the user preferences
 
 #### FINISHED
 Five servlets:
-- [✓] Search Item : Fetch data from TicketMaster API  
-- [✓] Recommendation : Using 
+- [✓] Search activities, fetch data from TicketMaster API  
+- [✓] Store favorite activities in the databaes
+- [✓] Undo the storation of activities, and delete this activity in the database 
+- [✓] User login and store user in the database
+- [✓] User logout
+Recommendation: 
+- [✓] Based on user's favorited activities, do a filter on all the new activites, order the activites based on the categories, distances and ratings.
 
 
 ### Notes
@@ -39,12 +42,6 @@ Describe any challenges encountered while building the app.
 
 ### MySql
 
-#### TASKS 
-- [ ] User sees an app icon on the home screen and a styled launch screen.
-- [ ] User can view and scroll through a list of movies now playing in theaters.
-- [ ] User can view the movie poster image for each movie.
-
-#### FINISHED
 The MySQL database has 4 tables.   
 - [✓] The first table is the item with 7 properties, including the item's id, name, rating, address, image_url, url and distance from the user's geolocations.   
 - [✓] The second table is the categories, this table has a foreign key linked to the item, as categories is also a property for the item.  
@@ -52,7 +49,8 @@ The MySQL database has 4 tables.
 - [✓] The fourth table is the users, which includes the user_id, the password, the first_name and the last_name.
 
 ### Notes
-Describe any challenges encountered while building the app.
+
+Applied the polymophism and factory pattern to build the DB connection interface, such that either MySQL or MongoDB connection can be built on the fly
 
 ---
 
@@ -60,12 +58,9 @@ Describe any challenges encountered while building the app.
 
 ### MongoDB
 
-#### TASKS 
-- [ ] User sees an app icon on the home screen and a styled launch screen.
-- [ ] User can view and scroll through a list of movies now playing in theaters.
-- [ ] User can view the movie poster image for each movie.
-
-#### FINISHED
+Use two collections to store the data.
+- users - Store user information and user's liked activites
+- items - Store activites information, including all the categorites, ratings and distances, ect.
 
 ### Notes
 Describe any challenges encountered while building the app.
