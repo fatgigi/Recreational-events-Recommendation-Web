@@ -21,7 +21,7 @@ import java.io.InputStreamReader;
 public class TicketMasterAPI {
 	private static final String URL = "https://app.ticketmaster.com/discovery/v2/events.json";
 	private static final String DEFAULT_KEYWORD = "";// no restriction
-	private static final String API_KEY = "ZJgXo6ZljElM4L5YAKuVY9cuLGpWgP3b";
+	private static final String API_KEY = "xxxx";
 	
 	/**
 	 * Helper methods
