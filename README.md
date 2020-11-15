@@ -1,6 +1,13 @@
 # Recreational-events-Recommendation-Web
 
-This project is an web recommendation enginee that allows users to browse near by recreational activities.  
+This project is a personalization based recommendation engine for recreational events.  
+
+What the project basically does is to use the user's geolocations to search and recommend recreational activities for people to participate.
+
+The backend includes a Java service which has 5 servlets, including the functionalities of search, recommendation, set and unset favorite events and login and logout.
+
+Applied the polymophism and factory pattern to build the DB connection interface, such that either MySQL or MongoDB connection can be built on the fly.
+
 The data comes from the [TicketMaster API](https://developer.ticketmaster.com/).
 
 
